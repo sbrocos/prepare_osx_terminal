@@ -1,0 +1,17 @@
+coreutils:
+gnupg:
+imagemagick:
+macvim:
+  depend: vim
+python: 
+python3:
+  depend: python
+vim:
+  ocommand: '--override-system-vi'
+wget:
+  ocommand: '--with-iri'
+zsh:
+  post: 'post_zsh'
+  children: 'zsh-completations'
+zsh-completations:
+  depend: zsh
